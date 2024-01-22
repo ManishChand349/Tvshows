@@ -61,13 +61,13 @@ const ShowDetails = () => {
           />
           <div className="flex gap-3">
             <p className="text-xl my-2 text-gray-400">
-              Premiered {show.premiered}
+              Premiered: {show.premiered}
             </p>
             <p className="text-xl my-2 text-gray-400">
-              Average Runtime {show.averageRuntime}
+              Average Runtime: {show.averageRuntime}
             </p>
             <p className="text-xl my-2 text-gray-400">
-              Language {show.language}
+              Language: {show.language}
             </p>
           </div>
           <button
@@ -140,7 +140,7 @@ const ShowDetails = () => {
                         <input
                           type="number"
                           className="w-full rounded-lg border-gray-200 p-4 pe-3 text-sm shadow-sm"
-                          placeholder="number for tickets"
+                          placeholder="Number for tickets"
                         />
                       </div>
                     </div>
