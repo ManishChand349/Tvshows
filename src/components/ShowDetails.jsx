@@ -151,7 +151,7 @@ const ShowDetails = () => {
 
                       <div className="relative">
                         <input
-                          type="number"
+                          type="email"
                           className="w-full rounded-lg border-gray-200 p-4 pe-3 text-sm shadow-sm"
                           placeholder="Enter Email"
                         />
