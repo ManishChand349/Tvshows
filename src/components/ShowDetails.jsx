@@ -41,19 +41,21 @@ const ShowDetails = () => {
 
   return (
     <>
-      <div className="flex justify-center mt-10">
+    <div className="mx-auto max-w-[80%]"> 
+    
+      <div className="flex justify-center mt-10 ">
         <Link to="/" className="text-4xl font-bold mb-4 ">
           {" "}
           TV Shows
         </Link>
       </div>
-      <div className="container mx-auto mt-8 flex">
+      <div className=" mt-8  flex-col sm:flex md:flex-row lg:flex-row">
         <img
           src={show.image && show.image.original}
           alt="logo"
-          className="h-[30%] w-[30%] text-center rounded-md "
+          className="h-[30%] w-[80%] md:w-[50%] lg:w-[50%] xl:w-[40%] text-center rounded-md "
         />
-        <div className="mx-[5%]">
+        <div className="mx-[2%]">
           <h1 className="text-3xl font-bold mb-4">{show.name}</h1>
           <div
             dangerouslySetInnerHTML={{ __html: show.summary }}
@@ -72,7 +74,7 @@ const ShowDetails = () => {
           </div>
           <button
             onClick={handleOpenForm}
-            className="block w-[20%] mt-[2rem] rounded-lg bg-indigo-600 px-5 py-3 text-sm font-medium text-white"
+            className="block w-[20rem] mt-[2rem] rounded-lg bg-indigo-600 px-5 py-3 text-sm font-medium text-white"
           >
             Book Movie Ticket
           </button>
@@ -171,6 +173,7 @@ const ShowDetails = () => {
           </div>
         )}
       </div>
+    </div>
     </>
   );
 };
